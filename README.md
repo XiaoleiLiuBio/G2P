@@ -1,4 +1,6 @@
-# G2P: A Pre-Genome-Wide-Association-Study Tool for Genotype Simulation, Phenotype Simulation, and Power Evaluation
+# G2P[![](https://img.shields.io/badge/Issues-35%2B-brightgreen.svg)](https://github.com/XiaoleiLiuBio/G2P/issues) [![](https://img.shields.io/badge/Release-v1.0.1-blue.svg)](https://github.com/XiaoleiLiuBio/G2P/commits/master)
+
+## A Pre-Genome-Wide-Association-Study Tool for [G](https://github.com/XiaoleiLiuBio/G2P)enotype Simulation, [P](https://github.com/XiaoleiLiuBio/G2P)henotype Simulation, and [P](https://github.com/XiaoleiLiuBio/G2P)ower Evaluation
 
 ### Authors:
 
