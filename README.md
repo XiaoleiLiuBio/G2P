@@ -1,4 +1,4 @@
-# G2P[![](https://img.shields.io/badge/Issues-0%2B-brightgreen.svg)](https://github.com/XiaoleiLiuBio/G2P/issues) [![](https://img.shields.io/badge/Release-v1.0.1-blue.svg)](https://github.com/XiaoleiLiuBio/G2P/commits/master)
+# G2P [![](https://img.shields.io/badge/Issues-0%2B-brightgreen.svg)](https://github.com/XiaoleiLiuBio/G2P/issues) [![](https://img.shields.io/badge/Release-v1.0.1-blue.svg)](https://github.com/XiaoleiLiuBio/G2P/commits/master)
 
 ## A Pre-Genome-Wide-Association-Study Tool for [G](https://github.com/XiaoleiLiuBio/G2P)enotype Simulation, [P](https://github.com/XiaoleiLiuBio/G2P)henotype Simulation, and [P](https://github.com/XiaoleiLiuBio/G2P)ower Evaluation
 
@@ -13,6 +13,10 @@
 <!-- TOC updateOnSave:false -->
 
 - [Installation](#installation)
+    - [Environment Setup](#environment-setup)
+    - [Windows](#windows)
+    - [MAC](#mac)
+    - [Linux](#linux)
 - [Data Preparation](#data-preparation)
     - [ped/map](#plink)
 - [Genotype Simulation](#genotype-simulation)
@@ -41,3 +45,13 @@
 ---
 # Installation
 **[back to top](#contents)**  
+
+## Environment Setup
+**[back to top](#contents)**  
+**JDK1.8 should be installed and environment variables must be configured before using G2P (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)**  
+## Windows
+**[back to top](#contents)**  
+
+
+
+
