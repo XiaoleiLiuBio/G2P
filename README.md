@@ -2,6 +2,12 @@
 
 ## A Pre-Genome-Wide-Association-Study Tool for [G](https://github.com/XiaoleiLiuBio/G2P)enotype Simulation, [P](https://github.com/XiaoleiLiuBio/G2P)henotype Simulation, and [P](https://github.com/XiaoleiLiuBio/G2P)ower Evaluation
 
+<p align="center">
+<a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/G2P_logo.png">
+<img src="results/G2P_logo.png" height="250px" width="450px">
+</a>
+</p>
+
 ### Authors:
 
 > You Tang and ***Xiaolei Liu***
@@ -47,25 +53,32 @@
 **[back to top](#contents)**  
 
 ## Environment Setup
-**[back to top](#contents)**
+**[back to top](#contents)**  
 **JDK1.8 should be installed and environment variables must be configured before using G2P (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)**  
-## Windows
-**[back to top](#contents)**
-**GUI**
-https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_win_64
-**Pipeline**
-https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_win_64
-## Mac
-**[back to top](#contents)**
-**GUI**
-https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_mac
-**Pipeline**
-https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_mac
-**Linux**
-**GUI**
-https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_linux_x86_64
-**Pipeline**
-https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_linux_x86_64
+## Windows  
+**[back to top](#contents)**  
+**GUI**  
+Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_win_64 and double click the .jar file  
+**Pipeline**  
+Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_win_64 and  
+## Mac  
+**[back to top](#contents)**  
+**GUI**  
+Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_mac and double click the .jar file  
+**Pipeline**  
+Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_mac  
+*permission setting*  
+chmod 777 gemma oldplink plink  
+**Linux**  
+**GUI**  
+Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_linux_x86_64 and run 'Java -jar gG2P.jar'  
+**Pipeline**  
+Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_linux_x86_64  
+*permission setting*  
+chmod 777 gemma oldplink plink  
+
+
+
 
 
 
