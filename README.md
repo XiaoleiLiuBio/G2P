@@ -47,10 +47,25 @@
 **[back to top](#contents)**  
 
 ## Environment Setup
-**[back to top](#contents)**  
+**[back to top](#contents)**
 **JDK1.8 should be installed and environment variables must be configured before using G2P (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)**  
 ## Windows
-**[back to top](#contents)**  
+**[back to top](#contents)**
+**GUI**
+https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_win_64
+**Pipeline**
+https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_win_64
+## Mac
+**[back to top](#contents)**
+**GUI**
+https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_mac
+**Pipeline**
+https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_mac
+**Linux**
+**GUI**
+https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_linux_x86_64
+**Pipeline**
+https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_linux_x86_64
 
 
 
