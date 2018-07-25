@@ -100,6 +100,16 @@ $ chmod 777 gemma oldplink plink
 |1|A214N|	0|	0|	0|	2|	0 0|	A G|	A A|	A G|	A A|	A G|
 |1|A239	|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A A|
 
+|Family ID|Individual ID|Father ID|Mother ID|Sex|Trait|marker 1|marker 2|marker 3|marker 4|marker 5|marker 6|
+| :---: | :---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
+|1|33-16|	0|	0|	0|	2|	0 0|	1 1|	1 1|	1 3|	A 3|	A G|
+|1|38-11|	0|	0|	0|	2|	0 0|	1 G|	1 3|	A A|	A 3|	A G|
+|1|4226	|	0|	0|	0|	2|	0 0|	1 G|	1 1|	A A|	A 3|	A G|
+|1|4722|	0|	0|	0|	2|	0 0|	1 G|	1 3|	A A|	A G|	A G|
+|1|A188	|	0|	0|	0|	2|	0 0|	1 1|	1 1|	A A|	A G|	A G|
+|1|A214N|	0|	0|	0|	2|	0 0|	1 G|	1 1|	A G|	A A|	A G|
+|1|A239	|	0|	0|	0|	2|	0 0|	1 1|	1 1|	A G|	A G|	A A|
+
 ## map
 **[back to top](#contents)**  
 
