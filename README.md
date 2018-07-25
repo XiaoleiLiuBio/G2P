@@ -90,8 +90,9 @@ $ chmod 777 gemma oldplink plink
 ## Ped(details see http://zzz.bwh.harvard.edu/plink/data.shtml#ped)
 **[back to top](#contents)**  
 
-|1|33-16|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
+|Family ID|Individual ID|Father ID|Mother ID|Sex|Trait|marker 1|marker 2|marker 3|marker 4|marker 5|marker 6|
 | :---: | :---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
+|1|33-16|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
 |1|38-11|	0|	0|	0|	2|	0 0|	A G|	A G|	A A|	A G|	A G|
 |1|4226	|	0|	0|	0|	2|	0 0|	A G|	A A|	A A|	A G|	A G|
 |1|4722|	0|	0|	0|	2|	0 0|	A G|	A G|	A A|	A G|	A G|
