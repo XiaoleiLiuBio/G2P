@@ -90,6 +90,7 @@ $ chmod 777 gemma oldplink plink
 ## Ped(details see http://zzz.bwh.harvard.edu/plink/data.shtml#ped)
 **[back to top](#contents)**  
 
+|1|33-16|	0|	0|
 | :---: | :---: |:---: |:---: |
 |1|33-16|	0|	0|
 0|	2|	0 0|	A A|
