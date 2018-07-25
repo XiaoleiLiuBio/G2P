@@ -68,14 +68,18 @@ Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_ma
 **Pipeline**  
 Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_mac  
 *permission setting*  
-chmod 777 gemma oldplink plink  
+```bash
+$ chmod 777 gemma oldplink plink  
+```
 **Linux**  
 **GUI**  
 Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_linux_x86_64 and run 'Java -jar gG2P.jar'  
 **Pipeline**  
 Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_linux_x86_64  
 *permission setting*  
-chmod 777 gemma oldplink plink  
+```bash
+$ chmod 777 gemma oldplink plink  
+```
 
 
 
