@@ -77,7 +77,7 @@ $ chmod 777 gemma oldplink plink
 Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_linux_x86_64 
 and run 
 ```bash
-'Java -jar gG2P.jar'  
+$ Java -jar gG2P.jar  
 ```
 **Pipeline**  
 Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_linux_x86_64  
@@ -90,6 +90,7 @@ $ chmod 777 gemma oldplink plink
 ## Ped(details see http://zzz.bwh.harvard.edu/plink/data.shtml#ped)
 **[back to top](#contents)**  
 
+| :---: | :---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
 |1|33-16|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
 | :---: | :---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
 |1|38-11|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
