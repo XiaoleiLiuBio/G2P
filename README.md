@@ -91,7 +91,7 @@ $ chmod 777 gemma oldplink plink
 **[back to top](#contents)**  
 
 
-| Taxa | trait1 | trait2 | trait3 |
+|1|33-16|	0|	0|
 | :---: | :---: |:---: |:---: |
 |1|33-16|	0|	0|
 0|	2|	0 0|	A A|
