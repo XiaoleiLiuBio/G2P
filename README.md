@@ -72,8 +72,13 @@ Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_ma
 $ chmod 777 gemma oldplink plink  
 ```
 **Linux**  
+**[back to top](#contents)**  
 **GUI**  
-Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_linux_x86_64 and run 'Java -jar gG2P.jar'  
+Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_linux_x86_64 
+and run 
+```bash
+'Java -jar gG2P.jar'  
+```
 **Pipeline**  
 Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_linux_x86_64  
 *permission setting*  
@@ -81,6 +86,20 @@ Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_li
 $ chmod 777 gemma oldplink plink  
 ```
 
+# Data Preparation
+## Ped
+**[back to top](#contents)**  
+
+|1|33-16|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
+|1|38-11|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
+|1|4226	|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
+|1|4722|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
+|1|A188	|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
+|1|A214N|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
+|1|A239	|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
+
+## map
+**[back to top](#contents)**  
 
 
 
