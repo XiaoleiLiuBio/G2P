@@ -89,7 +89,7 @@ $ chmod 777 gemma oldplink plink
 # Data Preparation
 ## Ped
 **[back to top](#contents)**  
-
+| :---: | :---: |:---: |:---: |
 |1|33-16|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
 |1|38-11|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
 |1|4226	|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|	A A|
