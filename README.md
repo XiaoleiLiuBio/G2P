@@ -91,13 +91,13 @@ $ chmod 777 gemma oldplink plink
 **[back to top](#contents)**  
 
 |1|33-16|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
-|1|38-11|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
-|1|4226	|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
-|1|4722|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
-|1|A188	|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
-|1|A214N|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
-|1|A239	|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A G|
 | :---: | :---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
+|1|38-11|	0|	0|	0|	2|	0 0|	A G|	A G|	A A|	A G|	A G|
+|1|4226	|	0|	0|	0|	2|	0 0|	A G|	A A|	A A|	A G|	A G|
+|1|4722|	0|	0|	0|	2|	0 0|	A G|	A G|	A A|	A G|	A G|
+|1|A188	|	0|	0|	0|	2|	0 0|	A A|	A A|	A A|	A G|	A G|
+|1|A214N|	0|	0|	0|	2|	0 0|	A G|	A A|	A G|	A A|	A G|
+|1|A239	|	0|	0|	0|	2|	0 0|	A A|	A A|	A G|	A G|	A A|
 
 ## map
 **[back to top](#contents)**  
