@@ -88,7 +88,7 @@ $ chmod 777 gemma oldplink plink
 
 # Data Preparation
 ## Ped(details see http://zzz.bwh.harvard.edu/plink/data.shtml#ped)
-**[back to top](#contents)**  
+**[back to top](#contents)** 
 
 |Family ID|Individual ID|Father ID|Mother ID|Sex|Trait|marker 1|marker 2|marker 3|marker 4|marker 5|marker 6|
 | :---: | :---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
@@ -102,19 +102,42 @@ $ chmod 777 gemma oldplink plink
 
 |Family ID|Individual ID|Father ID|Mother ID|Sex|Trait|marker 1|marker 2|marker 3|marker 4|marker 5|marker 6|
 | :---: | :---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
-|1|33-16|	0|	0|	0|	2|	0 0|	1 1|	1 1|	1 3|	A 3|	A G|
-|1|38-11|	0|	0|	0|	2|	0 0|	1 G|	1 3|	A A|	A 3|	A G|
-|1|4226	|	0|	0|	0|	2|	0 0|	1 G|	1 1|	A A|	A 3|	A G|
-|1|4722|	0|	0|	0|	2|	0 0|	1 G|	1 3|	A A|	A G|	A G|
-|1|A188	|	0|	0|	0|	2|	0 0|	1 1|	1 1|	A A|	A G|	A G|
-|1|A214N|	0|	0|	0|	2|	0 0|	1 G|	1 1|	A G|	A A|	A G|
-|1|A239	|	0|	0|	0|	2|	0 0|	1 1|	1 1|	A G|	A G|	A A|
+|1|33-16|	0|	0|	0|	2|	0 0|	1 1|	1 1|	1 3|	1 3|	1 3|
+|1|38-11|	0|	0|	0|	2|	0 0|	1 3|	1 3|	1 1|	1 3|	1 3|
+|1|4226	|	0|	0|	0|	2|	0 0|	1 3|	1 1|	1 1|	1 3|	1 3|
+|1|4722|	0|	0|	0|	2|	0 0|	1 3|	1 3|	1 1|	1 3|	1 3|
+|1|A188	|	0|	0|	0|	2|	0 0|	1 1|	1 1|	1 1|	1 3|	1 3|
+|1|A214N|	0|	0|	0|	2|	0 0|	1 3|	1 1|	1 3|	1 1|	1 3|
+|1|A239	|	0|	0|	0|	2|	0 0|	1 1|	1 1|	1 3|	1 3|	1 1|
 
-## map
+## map(details see http://zzz.bwh.harvard.edu/plink/data.shtml#map)
 **[back to top](#contents)**  
+|Chromosome ID|Marker ID|Genetic Distance|Physical Distance|
+| :---: | :---: |:---: |:---: |
+1|	PZB00859.1|	0|	157104|
+1|	PZA01271.1|	0|	1947984|
+1|	PZA03613.2|	0|	2914066|
+1|	PZA03613.1|	0|	2914171|
+1|	PZA03614.2|	0|	2915078|
+1|	PZA03614.1|	0|	2915242|
+1|	PZA00258.3|	0|	2973508|
 
-
-
+## pop
+**[back to top](#contents)**  
+|Sample ID|sub-Population ID|
+33-16|	1|	
+38_11|	1|	
+4226|	1|	
+4722|	1|	
+A188|	1|	
+A214N|	1|	
+A239|	1|	
+A272|	1|	
+A441-5|	1|	
+A554|	1|	
+A556|	1|	
+A6|	1|		
+A619|	1|
 
 
 
