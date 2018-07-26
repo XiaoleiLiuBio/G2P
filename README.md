@@ -117,8 +117,6 @@ $ chmod 777 gemma oldplink plink
 | :---: | :---: |:---: |:---: |
 |1|	PZB00859.1|	0|	157104|
 |1|	PZA01271.1|	0|	1947984|
-
-
 |1|	PZA03613.2|	0|	2914066|
 |1|	PZA03613.1|	0|	2914171|
 |1|	PZA03614.2|	0|	2915078|
@@ -127,6 +125,7 @@ $ chmod 777 gemma oldplink plink
 
 ## pop
 **[back to top](#contents)**  
+
 |Sample ID|sub-Population ID|
 | :---: | :---: |
 |33-16|	1|	
