@@ -73,7 +73,7 @@ Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/kG2P_ma
 ```bash
 $ chmod 777 gemma oldplink plink  
 ```
-**Linux**  
+## Linux  
 **[back to top](#contents)**  
 **GUI**  
 Download all files from https://github.com/XiaoleiLiuBio/G2P/tree/master/gG2P_linux_x86_64 
@@ -90,7 +90,8 @@ $ chmod 777 gemma oldplink plink
 
 # Data Preparation
 *All files should be prepared with the same prefix*
-## .ped (details see http://zzz.bwh.harvard.edu/plink/data.shtml#ped)
+## .ped  
+*details see http://zzz.bwh.harvard.edu/plink/data.shtml#ped*
 **[back to top](#contents)** 
 
 |Family ID|Individual ID|Father ID|Mother ID|Sex|Trait|marker 1|marker 2|marker 3|marker 4|marker 5|marker 6|
@@ -113,7 +114,8 @@ $ chmod 777 gemma oldplink plink
 |1|A214N|	0|	0|	0|	2|	0 0|	1 3|	1 1|	1 3|	1 1|	1 3|
 |1|A239	|	0|	0|	0|	2|	0 0|	1 1|	1 1|	1 3|	1 3|	1 1|
 
-## .map (details see http://zzz.bwh.harvard.edu/plink/data.shtml#map)
+## .map  
+*details see http://zzz.bwh.harvard.edu/plink/data.shtml#map*
 **[back to top](#contents)** 
 
 |Chromosome ID|Marker ID|Genetic Distance|Physical Distance|
@@ -126,7 +128,7 @@ $ chmod 777 gemma oldplink plink
 |1|	PZA03614.1|	0|	2915242|
 |1|	PZA00258.3|	0|	2973508|
 
-## .pop
+## .pop  
 **[back to top](#contents)**  
 
 |Sample ID|sub-Population ID|
