@@ -125,6 +125,7 @@ $ chmod 777 gemma oldplink plink
 ## pop
 **[back to top](#contents)**  
 |Sample ID|sub-Population ID|
+| :---: | :---: |
 33-16|	1|	
 38_11|	1|	
 4226|	1|	
