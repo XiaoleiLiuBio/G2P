@@ -111,11 +111,14 @@ $ chmod 777 gemma oldplink plink
 |1|A239	|	0|	0|	0|	2|	0 0|	1 1|	1 1|	1 3|	1 3|	1 1|
 
 ## map(details see http://zzz.bwh.harvard.edu/plink/data.shtml#map)
-**[back to top](#contents)**  
+**[back to top](#contents)** 
+
 |Chromosome ID|Marker ID|Genetic Distance|Physical Distance|
 | :---: | :---: |:---: |:---: |
 |1|	PZB00859.1|	0|	157104|
 |1|	PZA01271.1|	0|	1947984|
+
+
 |1|	PZA03613.2|	0|	2914066|
 |1|	PZA03613.1|	0|	2914171|
 |1|	PZA03614.2|	0|	2915078|
