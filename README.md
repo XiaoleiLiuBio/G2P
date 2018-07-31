@@ -38,8 +38,8 @@
     - [Phenotype _ GUI](#phenotype-_-gui)
     - [Phenotype _ Pipeline](#phenotype-_-pipeline)
 - [Population Structure](#population-_-structure)
-    - [PC _ GUI](#pc-_-gui)
-    - [PC _ Pipeline](#pc-_-pipeline)
+    - [Population structure _ GUI](#pc-_-gui)
+    - [Population structure _ Pipeline](#pc-_-pipeline)
 - [GWAS](#gwas)
     - [GWAS _ GUI](#gwas-_-gui)
     - [GWAS _ Pipeline](#gwas-_-pipeline)
@@ -258,7 +258,7 @@ java -jar KG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --di
 ```
 
 # Population Structure  
-## PC _ GUI
+## Population structure _ GUI
 
 <p align="center">
 <a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Population Structure.png">
@@ -266,13 +266,44 @@ java -jar KG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --di
 </a>
 </p>
 
-## PC _ Pipeline
+## Population structure _ Pipeline
 
-### Windows
+### PC _ Windows
 ```
 java -jar kG2P.jar --pre "plink --bfile D:\data\AG --pca 3 --out D:\data\AG"
 ```
-### Linux/Mac
+### PC _ Linux/Mac
 ```
 java -jar kG2P.jar --pre "./plink --bfile /root/data/AG --pca 3 --out /root/data/AG"
 ```
+
+### Kinship _ Linux/Mac
+```
+java -jar kG2P.jar --pre "./gemma -bfile /root/data/AG -gk -o testgemma"
+```
+
+# GWAS  
+## GWAS _ GUI
+
+<p align="center">
+<a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/GWAS.png">
+<img src="results/GWAS.png" height="400px" width="460px">
+</a>
+</p>
+
+## GWAS _ Pipeline
+
+### Plink _ Windows
+```
+java -jar kG2P.jar  --GWAS "plink --bfile D:\data\AG --fam D:\data\out\171104010413\Plink\Plink_snps1.fam --assoc --out D:\data\g2ptemp" --sp Plink_snps1.fam
+```
+### Plink _ Linux/Mac
+```
+java -jar kG2P.jar  --GWAS "./plink --bfile /root/data/AG --fam /root/data/output/171104010413/Plink/Plink_snps1.fam --assoc --out /root/data/g2ptemp" --sp Plink_snps1.fam
+```
+### Gemma _ Linux/Mac
+```
+java -jar kG2P.jar  --GWAS "./gemma -bfile /root/data/AG -p /root/data/out/171104030401/GEMMA/GEMMA_phenotype1.txt -k /root/output/testgemma.cXX.txt -lmm 4 -o g2ptemp" --sp GEMMA_phenotype1.txt
+```
+
+
