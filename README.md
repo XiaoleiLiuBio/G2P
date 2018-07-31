@@ -149,7 +149,7 @@ $ chmod 777 gemma oldplink plink
 
 # Genotype Simulation  
 
-## Single Population - GUI  
+## Single Population - GUI
 **[back to top](#contents)** 
 
 <p align="center">
@@ -158,7 +158,7 @@ $ chmod 777 gemma oldplink plink
 </a>
 </p>
 
-## Single Population - Pipeline  
+## Single Population - Pipeline
 **[back to top](#contents)** 
 
 ### Windows
@@ -175,7 +175,7 @@ java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\out
 ```
 
 
-## Multiple Populations - GUI 
+## Multiple Populations - GUI
 **[back to top](#contents)** 
 
 <p align="center">
@@ -184,7 +184,7 @@ java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\out
 </a>
 </p>
 
-## Multiple Populations - Pipeline 
+## Multiple Populations - Pipeline
 **[back to top](#contents)** 
 
 ### Windows
@@ -204,7 +204,7 @@ java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop
 java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --impute --rn 100,200,300,400
 ```
 
-## Random Simulation - GUI  
+## Random Simulation - GUI
 **[back to top](#contents)** 
 
 <p align="center">
@@ -213,7 +213,7 @@ java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop
 </a>
 </p>
 
-## Random Simulation - Pipeline  
+## Random Simulation - Pipeline
 **[back to top](#contents)** 
 
 ### Windows
