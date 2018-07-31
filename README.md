@@ -38,8 +38,8 @@
     - [Phenotype _ GUI](#phenotype-_-gui)
     - [Phenotype _ Pipeline](#phenotype-_-pipeline)
 - [Population Structure](#population-_-structure)
-    - [Population structure _ GUI](#pc-_-gui)
-    - [Population structure _ Pipeline](#pc-_-pipeline)
+    - [Population structure _ GUI](#population-structure-_-gui)
+    - [Population structure _ Pipeline](#population-structure-_-pipeline)
 - [GWAS](#gwas)
     - [GWAS _ GUI](#gwas-_-gui)
     - [GWAS _ Pipeline](#gwas-_-pipeline)
@@ -306,4 +306,27 @@ java -jar kG2P.jar  --GWAS "./plink --bfile /root/data/AG --fam /root/data/outpu
 java -jar kG2P.jar  --GWAS "./gemma -bfile /root/data/AG -p /root/data/out/171104030401/GEMMA/GEMMA_phenotype1.txt -k /root/output/testgemma.cXX.txt -lmm 4 -o g2ptemp" --sp GEMMA_phenotype1.txt
 ```
 
+# Method Evaluation
+## Method Evaluation _ GUI
 
+<p align="center">
+<a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Evaluation.png">
+<img src="results/Evaluation.png" height="400px" width="460px">
+</a>
+</p>
+
+## Method Evaluation _ Pipeline
+### Plink _ Windows
+```
+java -jar kG2P.jar --map D:\data\AG.map --qtn D:\data\output\170106093742\qtn\test.qtn --gwas D:\data\output\Plink_snps1.qassoc --pv 9 --out D:\data\output
+```
+
+### Plink _ Linux/Mac
+```
+java -jar kG2P.jar --map /root/data/AG.map --qtn /root/data/output/171104030401/qtn/test.qtn --gwas /root/data/output/Plink_snps1.qassoc --pv 9 --out /root/data/output
+```
+
+### Gemma _ Linux/Mac
+```
+java -jar kG2P.jar --map /root/data/AG.map --qtn /root/data/output/171104030401/qtn/test.qtn --gwas /root/output/GEMMA_phenotype1.assoc.txt --pv 9 --out /root/data/output
+```
