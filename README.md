@@ -154,7 +154,7 @@ $ chmod 777 gemma oldplink plink
 
 <p align="center">
 <a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Single Population.png">
-<img src="results/Single Population.png" height="460px" width="460px">
+<img src="results/Single Population.png" height="400px" width="460px">
 </a>
 </p>
 
@@ -180,23 +180,51 @@ java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\out
 
 <p align="center">
 <a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Multi Populations.png">
-<img src="results/Multi Populations.png" height="460px" width="460px">
+<img src="results/Multi Populations.png" height="400px" width="460px">
 </a>
 </p>
 
 ## Multiple Populations - Pipeline 
 **[back to top](#contents)** 
 
+### Windows
+```
+java -jar kG2P.jar --ped D:\data\AG.ped –map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --block 4 --rn 100
+```
+
+### Linux/Mac
+```
+java -jar kG2P.jar --ped /root/data/AG.ped --map /root/data/AG.map --pop /root/data/AG.pop --outgen /root/data/output --impute --block 4 --rn 100
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --block 4 --rn 100
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --rn 100
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --impute --rn 100
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --impute --block 4 --rn 100,200,300,400
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --block 4 --rn 100,200,300,400
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --rn 100,200,300,400
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --impute --rn 100,200,300,400
+```
+
 ## Random Simulation - GUI  
 **[back to top](#contents)** 
 
 <p align="center">
 <a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Random Populations.png">
-<img src="results/Random Populations.png" height="460px" width="460px">
+<img src="results/Random Populations.png" height="400px" width="460px">
 </a>
 </p>
 
 ## Random Simulation - Pipeline  
 **[back to top](#contents)** 
+
+### Windows
+```
+java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen D:\data\output
+```
+
+### Linux/Mac
+```
+java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen /root/data/output
+```
+
 
 
