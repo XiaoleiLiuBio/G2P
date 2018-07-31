@@ -149,7 +149,7 @@ $ chmod 777 gemma oldplink plink
 
 # Genotype Simulation  
 
-## Single Population - GUI
+## Single Population - GUI  
 **[back to top](#contents)** 
 
 <p align="center">
