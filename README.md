@@ -227,6 +227,7 @@ java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --o
 ```
 
 # Phenotype Simulation  
+**[back to top](#contents)**  
 ## Phenotype _ GUI
 
 ### Normal distribution
@@ -257,7 +258,8 @@ java -jar .\kG2P.jar --ped D:\data\AG.ped --outgen D:\data\output --rep 10 --dis
 java -jar KG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --dis nor --m 0,0.1 --v 0.99,0.98 --h2 0.5 --nqtn 10,20 --QTNarea 1-500,1000-1500
 ```
 
-# Population Structure  
+# Population Structure 
+**[back to top](#contents)**  
 ## Population structure _ GUI
 
 <p align="center">
@@ -267,7 +269,6 @@ java -jar KG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --di
 </p>
 
 ## Population structure _ Pipeline
-
 ### PC _ Windows
 ```
 java -jar kG2P.jar --pre "plink --bfile D:\data\AG --pca 3 --out D:\data\AG"
@@ -283,6 +284,7 @@ java -jar kG2P.jar --pre "./gemma -bfile /root/data/AG -gk -o testgemma"
 ```
 
 # GWAS  
+**[back to top](#contents)**  
 ## GWAS _ GUI
 
 <p align="center">
@@ -292,7 +294,6 @@ java -jar kG2P.jar --pre "./gemma -bfile /root/data/AG -gk -o testgemma"
 </p>
 
 ## GWAS _ Pipeline
-
 ### Plink _ Windows
 ```
 java -jar kG2P.jar  --GWAS "plink --bfile D:\data\AG --fam D:\data\out\171104010413\Plink\Plink_snps1.fam --assoc --out D:\data\g2ptemp" --sp Plink_snps1.fam
@@ -307,6 +308,7 @@ java -jar kG2P.jar  --GWAS "./gemma -bfile /root/data/AG -p /root/data/out/17110
 ```
 
 # Method Evaluation
+**[back to top](#contents)**  
 ## Method Evaluation _ GUI
 
 <p align="center">
