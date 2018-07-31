@@ -29,23 +29,23 @@
     - [.pop](#.pop)
 - [Genotype Simulation](#genotype-simulation)
     - [Single Population _ GUI](#single-population-_-gui)
-    - [Single Population - Pipeline](#single-population-pipeline)
-    - [Multiple Populations - GUI](#multiple-populations-gui)
-    - [Multiple Populations - Pipeline](#multiple-population-pipeline)
-    - [Random Simulation - GUI](#random-simulation-gui)
-    - [Random Simulation - Pipeline](#random-simulation-pipeline)
+    - [Single Population _ Pipeline](#single-population-_-pipeline)
+    - [Multiple Populations _ GUI](#multiple-populations-_-gui)
+    - [Multiple Populations _ Pipeline](#multiple-population-_-pipeline)
+    - [Random Simulation _ GUI](#random-simulation-_-gui)
+    - [Random Simulation _ Pipeline](#random-simulation-_-pipeline)
 - [Phenotype Simulation](#phenotype-simulation)
-    - [Phenotype - GUI](#phenotype-gui)
-    - [Phenotype - Pipeline](#phenotype-pipeline)
-- [Population Structure](#population-structure)
-    - [PC - GUI](#pc-gui)
-    - [PC - Pipeline](#pc-pipeline)
+    - [Phenotype _ GUI](#phenotype-_-gui)
+    - [Phenotype _ Pipeline](#phenotype-_-pipeline)
+- [Population Structure](#population-_-structure)
+    - [PC _ GUI](#pc-_-gui)
+    - [PC _ Pipeline](#pc-_-pipeline)
 - [GWAS](#gwas)
-    - [GWAS - GUI](#gwas-gui)
-    - [GWAS - Pipeline](#gwas-pipeline)
+    - [GWAS _ GUI](#gwas-_-gui)
+    - [GWAS _ Pipeline](#gwas-_-pipeline)
 - [Method Evaluation](#method-evaluation)
-    - [Method Evaluation - GUI](#method-evaluation-gui)
-    - [Method Evaluation - Pipeline](#method-evaluation-pipeline)
+    - [Method Evaluation _ GUI](#method-evaluation-_-gui)
+    - [Method Evaluation _ Pipeline](#method-evaluation-_-pipeline)
 - [FAQ and Hints](#faq-and-hints)
 
 <!-- /TOC -->
@@ -158,7 +158,7 @@ $ chmod 777 gemma oldplink plink
 </a>
 </p>
 
-## Single Population - Pipeline
+## Single Population _ Pipeline
 **[back to top](#contents)** 
 
 ### Windows
@@ -175,7 +175,7 @@ java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\out
 ```
 
 
-## Multiple Populations - GUI
+## Multiple Populations _ GUI
 **[back to top](#contents)** 
 
 <p align="center">
@@ -184,7 +184,7 @@ java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\out
 </a>
 </p>
 
-## Multiple Populations - Pipeline
+## Multiple Populations _ Pipeline
 **[back to top](#contents)** 
 
 ### Windows
@@ -204,7 +204,7 @@ java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop
 java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --impute --rn 100,200,300,400
 ```
 
-## Random Simulation - GUI
+## Random Simulation _ GUI
 **[back to top](#contents)** 
 
 <p align="center">
@@ -213,7 +213,7 @@ java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop
 </a>
 </p>
 
-## Random Simulation - Pipeline
+## Random Simulation _ Pipeline
 **[back to top](#contents)** 
 
 ### Windows
