@@ -169,9 +169,9 @@ java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\ou
 ### Linux/Mac
 ```
 java -jar kG2P.jar --ped /root/data/AG.ped --map /root/data/AG.map --outgen /root/data/output --rn 100 --block 4 –impute
-java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --block 4
-java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --impute
-java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --block 4
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --impute
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100
 ```
 
 
@@ -229,12 +229,14 @@ java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --o
 # Phenotype Simulation  
 ## Phenotype _ GUI
 
+### Normal distribution
 <p align="center">
 <a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Simulate Phenotype-normal.png">
 <img src="results/Simulate Phenotype-normal.png" height="400px" width="460px">
 </a>
 </p>
 
+### Geometry distribution
 <p align="center">
 <a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Simulate Phenotype-geometry.png">
 <img src="results/Simulate Phenotype-geometry.png" height="400px" width="460px">
@@ -253,4 +255,24 @@ java -jar kG2P.jar --ped /root/data/AG.ped --outgen /root/data/output --rep 100 
 java -jar kG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --dis geo 0.99 --h2 0.5 --nqtn 100
 java -jar .\kG2P.jar --ped D:\data\AG.ped --outgen D:\data\output --rep 10 --dis geo 0.99,0.88 --h2 0.5 --nqtn 10,20 --QTNarea 1-500,1000-1500
 java -jar KG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --dis nor --m 0,0.1 --v 0.99,0.98 --h2 0.5 --nqtn 10,20 --QTNarea 1-500,1000-1500
+```
+
+# Population Structure  
+## PC _ GUI
+
+<p align="center">
+<a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Population Structure.png">
+<img src="results/Population Structure.png" height="400px" width="460px">
+</a>
+</p>
+
+## PC _ Pipeline
+
+### Windows
+```
+java -jar kG2P.jar --pre "plink --bfile D:\data\AG --pca 3 --out D:\data\AG"
+```
+### Linux/Mac
+```
+java -jar kG2P.jar --pre "./plink --bfile /root/data/AG --pca 3 --out /root/data/AG"
 ```
