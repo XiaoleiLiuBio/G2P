@@ -25,8 +25,8 @@
     - [Linux](#linux)
 - [Data Preparation](#data-preparation)
     - [ped](#ped)
-    - [.map](#.map)
-    - [.pop](#.pop)
+    - [map](#map)
+    - [pop](#pop)
 - [Genotype Simulation](#genotype-simulation)
     - [Single Population _ GUI](#single-population-_-gui)
     - [Single Population _ Pipeline](#single-population-_-pipeline)
@@ -90,7 +90,7 @@ $ chmod 777 gemma oldplink plink
 
 # Data Preparation
 *All files should be prepared with the same prefix*
-## .ped  
+## ped  
 *details see http://zzz.bwh.harvard.edu/plink/data.shtml#ped*
 **[back to top](#contents)** 
 
@@ -114,7 +114,7 @@ $ chmod 777 gemma oldplink plink
 |1|A214N|	0|	0|	0|	2|	0 0|	1 3|	1 1|	1 3|	1 1|	1 3|
 |1|A239	|	0|	0|	0|	2|	0 0|	1 1|	1 1|	1 3|	1 3|	1 1|
 
-## .map  
+## map  
 *details see http://zzz.bwh.harvard.edu/plink/data.shtml#map*
 **[back to top](#contents)** 
 
@@ -128,7 +128,7 @@ $ chmod 777 gemma oldplink plink
 |1|	PZA03614.1|	0|	2915242|
 |1|	PZA00258.3|	0|	2973508|
 
-## .pop  
+## pop  
 **[back to top](#contents)**  
 
 |Sample ID|sub-Population ID|
