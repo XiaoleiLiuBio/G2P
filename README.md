@@ -24,7 +24,7 @@
     - [MAC](#mac)
     - [Linux](#linux)
 - [Data Preparation](#data-preparation)
-    - [.ped](#.ped)
+    - [ped](#ped)
     - [.map](#.map)
     - [.pop](#.pop)
 - [Genotype Simulation](#genotype-simulation)
