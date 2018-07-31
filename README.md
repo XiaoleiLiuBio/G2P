@@ -161,6 +161,20 @@ $ chmod 777 gemma oldplink plink
 ## Single Population - Pipeline  
 **[back to top](#contents)** 
 
+### Windows
+```
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --block 4 --impute
+```
+
+### Linux/Mac
+```
+java -jar kG2P.jar --ped /root/data/AG.ped --map /root/data/AG.map --outgen /root/data/output --rn 100 --block 4 –impute
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --block 4
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --impute
+java -jar G2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100
+```
+
+
 ## Multiple Populations - GUI 
 **[back to top](#contents)** 
 
