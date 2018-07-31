@@ -28,7 +28,7 @@
     - [.map](#.map)
     - [.pop](#.pop)
 - [Genotype Simulation](#genotype-simulation)
-    - [Single Population GUI](#single-population-gui)
+    - [Single Population _ GUI](#single-population-_-gui)
     - [Single Population - Pipeline](#single-population-pipeline)
     - [Multiple Populations - GUI](#multiple-populations-gui)
     - [Multiple Populations - Pipeline](#multiple-population-pipeline)
@@ -149,7 +149,7 @@ $ chmod 777 gemma oldplink plink
 
 # Genotype Simulation  
 
-## Single Population GUI  
+## Single Population _ GUI  
 **[back to top](#contents)** 
 
 <p align="center">
