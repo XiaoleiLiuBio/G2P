@@ -28,12 +28,12 @@
     - [.map](#.map)
     - [.pop](#.pop)
 - [Genotype Simulation](#genotype-simulation)
-    - [Random Simulation - GUI](#random-simulation-gui)
     - [Single Population - GUI](#single-population-gui)
-    - [Multiple Population - GUI](#multiple-population-gui)
-    - [Random Simulation - Pipeline](#random-simulation-pipeline)
     - [Single Population - Pipeline](#single-population-pipeline)
-    - [Multiple Population - Pipeline](#multiple-population-pipeline)
+    - [Multiple Populations - GUI](#multiple-populations-gui)
+    - [Multiple Populations - Pipeline](#multiple-population-pipeline)
+    - [Random Simulation - GUI](#random-simulation-gui)
+    - [Random Simulation - Pipeline](#random-simulation-pipeline)
 - [Phenotype Simulation](#phenotype-simulation)
     - [Phenotype - GUI](#phenotype-gui)
     - [Phenotype - Pipeline](#phenotype-pipeline)
@@ -148,13 +148,41 @@ $ chmod 777 gemma oldplink plink
 |A619|	3|
 
 # Genotype Simulation  
-## Random Simulation  
+
+## Single Population - GUI  
 **[back to top](#contents)** 
 
 <p align="center">
-<a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Random Simulation 2.png">
-<img src="results/Random Simulation 2.png" height="460px" width="460px">
+<a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Single Population.png">
+<img src="results/Single Population.png" height="460px" width="460px">
 </a>
 </p>
+
+## Single Population - Pipeline  
+**[back to top](#contents)** 
+
+## Multiple Populations - GUI 
+**[back to top](#contents)** 
+
+<p align="center">
+<a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Multi Populations.png">
+<img src="results/Multi Populations.png" height="460px" width="460px">
+</a>
+</p>
+
+## Multiple Populations - Pipeline 
+**[back to top](#contents)** 
+
+## Random Simulation - GUI  
+**[back to top](#contents)** 
+
+<p align="center">
+<a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Random Populations.png">
+<img src="results/Random Populations.png" height="460px" width="460px">
+</a>
+</p>
+
+## Random Simulation - Pipeline  
+**[back to top](#contents)** 
 
 
