@@ -306,20 +306,6 @@ outgen: output path
 **[back to top](#contents)**  
 ## Phenotype _ GUI
 
-```
-Ped file path:
-QTN area: the genomic area that used to select QTNs
-Range: if 'QTN area' is 'Yes', 'range' can be used to set the 'QTN area'
-Distribution of QTN effects: two options, 'Normal' and 'Geometry'
-Mean: mean value of the normal distribution, length of 'Mean' should be the same with 'Variance'
-Variance: variance of the normal distribution
-Formats: phenotype formats of 'GEMMA', 'Plink', and 'FaST-LMM' softwares
-Number of simulated phenotypes: number of simulated phenotypes
-Number of QTNs: number of QTNs, if it is a vector, effect of different QTN group will follow different distribution; length of nqtn, m, and v should be same
-Heritability: heritability
-Output file path: output file path
-```
-
 ### Normal distribution
 <p align="center">
 <a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Simulate Phenotype-normal.png">
@@ -333,6 +319,20 @@ Output file path: output file path
 <img src="results/Simulate Phenotype-geometry.png" height="400px" width="460px">
 </a>
 </p>
+
+```
+Ped file path:
+QTN area: the genomic area that used to select QTNs
+Range: if 'QTN area' is 'Yes', 'range' can be used to set the 'QTN area'
+Distribution of QTN effects: two options, 'Normal' and 'Geometry'
+Mean: mean value of the normal distribution, length of 'Mean' should be the same with 'Variance'
+Variance: variance of the normal distribution
+Formats: phenotype formats of 'GEMMA', 'Plink', and 'FaST-LMM' softwares
+Number of simulated phenotypes: number of simulated phenotypes
+Number of QTNs: number of QTNs, if it is a vector, effect of different QTN group will follow different distribution; length of nqtn, m, and v should be same
+Heritability: heritability
+Output file path: output file path
+```
 
 ## Phenotype _ Pipeline
 ### Windows
@@ -406,6 +406,13 @@ pre: pipeline of the software you want to use, attention that the software shoul
 </a>
 </p>
 
+```
+Genotype (bed/bim/fam, ped/map): select genotype file
+Phenotype file path: select the first phenotype file, all phenotypes in the same path will be analyzed one by one; name of the phenotype file must include a continuous order number, e.g., 'phenotype1.txt', 'phenotype2.txt', 'phenotype3.txt'
+Results output file path: select output file path
+Command: command for running gwas of the first phenotype, user-specific covariates files and kinship file can also included in the command line
+```
+
 ## GWAS _ Pipeline
 ### Plink _ Windows
 ```
@@ -422,8 +429,8 @@ java -jar kG2P.jar  --GWAS "./gemma -bfile /root/data/AG -p /root/data/out/17110
 
 ```
 jar: executive software
-GWAS: gwas pipeline that you want to use
-sp: the first phenotype file, don't add the file path
+GWAS: command line used for running gwas of the first phenotype
+sp: the first phenotype file, the file path is not needed
 ```
 
 # Method Evaluation
@@ -435,6 +442,14 @@ sp: the first phenotype file, don't add the file path
 <img src="results/Evaluation.png" height="400px" width="460px">
 </a>
 </p>
+
+```
+Map file: map file
+QTN file: qtn file
+GWAS result files path: path of gwas results
+Column number of P values: column number of P values
+Output file path: output path of power/fdr evaluation results
+```
 
 ## Method Evaluation _ Pipeline
 ### Plink _ Windows
