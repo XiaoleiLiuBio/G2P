@@ -157,6 +157,7 @@ $ chmod 777 gemma oldplink plink
 <img src="results/Single Population.png" height="400px" width="460px">
 </a>
 </p>
+
 ```
 Ped: ped file
 Map: map file
