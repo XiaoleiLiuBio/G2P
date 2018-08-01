@@ -298,6 +298,7 @@ java -jar KG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --di
 ```
 
 ```
+jar: executive software
 rep: number of simulated phenotypes
 dis: distribution of QTN effects
 m: mean value of the normal distribution
@@ -332,6 +333,11 @@ java -jar kG2P.jar --pre "./plink --bfile /root/data/AG --pca 3 --out /root/data
 java -jar kG2P.jar --pre "./gemma -bfile /root/data/AG -gk -o testgemma"
 ```
 
+```
+jar: executive software
+pre: pipeline of the software you want to use, attention that the software should be put in the same path as kG2P.jar
+```
+
 # GWAS  
 **[back to top](#contents)**  
 ## GWAS _ GUI
@@ -354,6 +360,12 @@ java -jar kG2P.jar  --GWAS "./plink --bfile /root/data/AG --fam /root/data/outpu
 ### Gemma _ Linux/Mac
 ```
 java -jar kG2P.jar  --GWAS "./gemma -bfile /root/data/AG -p /root/data/out/171104030401/GEMMA/GEMMA_phenotype1.txt -k /root/output/testgemma.cXX.txt -lmm 4 -o g2ptemp" --sp GEMMA_phenotype1.txt
+```
+
+```
+jar: executive software
+GWAS: gwas pipeline that you want to use, attention that the GWAS software and phenotypes should be put in the same path as kG2P.jar
+sp:
 ```
 
 # Method Evaluation
