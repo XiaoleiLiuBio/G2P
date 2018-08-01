@@ -130,7 +130,7 @@ $ chmod 777 gemma oldplink plink
 
 ## pop  
 **[back to top](#contents)**  
-
+*new samples will be generated using samples within sub-population*
 |Sample ID|sub-Population ID|
 | :---: | :---: |
 |33-16|	1|	
@@ -146,6 +146,22 @@ $ chmod 777 gemma oldplink plink
 |A556|	3|	
 |A6|	3|		
 |A619|	3|
+
+## qtn
+**[back to top](#contents)**  
+*each column represents simulated QTNs for each phenotype*
+|Phenotype 1|Phenotype 2|Phenotype 3|Phenotype 4|Phenotype 5|
+| :---: | :---: | :---: | :---: | :---: |
+|66	|67	|80	|83	|90|
+|9	|15	|52	|59	|135|
+|90	|96	|143	|147	|174|
+|3	|3	|15	|58	|89|
+|89	|118	|185	|203	|212|
+|69	|72	|72	|84	|110|
+|46	|59	|125	|204	|207|
+|14	|15	|19	|29	|39|
+|9	|23	|65	|111	|131|
+|19	|52	|74	|179	|194|
 
 # Genotype Simulation  
 
@@ -364,8 +380,8 @@ java -jar kG2P.jar  --GWAS "./gemma -bfile /root/data/AG -p /root/data/out/17110
 
 ```
 jar: executive software
-GWAS: gwas pipeline that you want to use, attention that the GWAS software and phenotypes should be put in the same path as kG2P.jar
-sp:
+GWAS: gwas pipeline that you want to use
+sp: the first phenotype file, don't add the file path
 ```
 
 # Method Evaluation
@@ -392,4 +408,13 @@ java -jar kG2P.jar --map /root/data/AG.map --qtn /root/data/output/171104030401/
 ### Gemma _ Linux/Mac
 ```
 java -jar kG2P.jar --map /root/data/AG.map --qtn /root/data/output/171104030401/qtn/test.qtn --gwas /root/output/GEMMA_phenotype1.assoc.txt --pv 9 --out /root/data/output
+```
+
+```
+jar: executive software
+map: map file
+qtn: qtn file
+gwas: the first gwas result file, there is a one-to-one mapping between gwas result files and columns in qtn file
+pv: column number of P values
+out: output file path
 ```
