@@ -30,8 +30,8 @@
 - [Genotype Simulation](#genotype-simulation)
     - [Single Population _ GUI](#single-population-_-gui)
     - [Single Population _ Pipeline](#single-population-_-pipeline)
-    - [Multiple Populations _ GUI](#multiple-populations-_-gui)
-    - [Multiple Populations _ Pipeline](#multiple-population-_-pipeline)
+    - [Multi Populations _ GUI](#multi-populations-_-gui)
+    - [Multi Populations _ Pipeline](#multi-populations-_-pipeline)
     - [Random Simulation _ GUI](#random-simulation-_-gui)
     - [Random Simulation _ Pipeline](#random-simulation-_-pipeline)
 - [Phenotype Simulation](#phenotype-simulation)
@@ -210,7 +210,7 @@ rn: simulated sample size
 impute: if 'impute' is added, major allele will be used to impute missing values
 ```
 
-## Multiple Populations _ GUI
+## Multi Populations _ GUI
 **[back to top](#contents)** 
 
 <p align="center">
@@ -231,7 +231,7 @@ Sample size of each population: sample size of each new generated population
 Population size: number or vector, simulated sample size
 ```
 
-## Multiple Populations _ Pipeline
+## Multi Populations _ Pipeline
 **[back to top](#contents)** 
 
 ### Windows
