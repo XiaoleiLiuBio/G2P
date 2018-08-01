@@ -179,7 +179,7 @@ Ped: ped file
 Map: map file
 Path for output Ped/Map: path for output ped and map file
 Block: Yes or No, if "Yes", the whole genome will be divided into blocks and exchange to generate new samples
-Number of SNPs in each block:
+Number of SNPs in each block: Number of SNPs in each block
 Imputation: if TRUE, major allele will be used to impute missing values
 Population size: simulated sample size
 ```
@@ -218,6 +218,18 @@ impute: if 'impute' is added, major allele will be used to impute missing values
 <img src="results/Multi Populations.png" height="400px" width="460px">
 </a>
 </p>
+
+```
+Ped: ped file
+Map: map file
+Pop: pop file
+Path for output Ped/Map: path for output ped and map file
+Block: Yes or No, if "Yes", the whole genome will be divided into blocks and exchange to generate new samples
+Number of SNPs in each block: Number of SNPs in each block
+Imputation: if TRUE, major allele will be used to impute missing values
+Sample size of each population: sample size of each new generated population 
+Population size: number or vector, simulated sample size
+```
 
 ## Multiple Populations _ Pipeline
 **[back to top](#contents)** 
@@ -259,6 +271,15 @@ impute: if 'impute' is added, major allele will be used to impute missing values
 </a>
 </p>
 
+```
+Number of Chromosomes: total number of Chromosomes for each new generated sample
+Marker size of each Chromosome: vector, marker size of each Chromosome
+Population size: Sample size of new generated population
+Physical distance of neighbor markers: Physical distance of neighbor markers
+Output ped file path: output path of ped file
+Output map file path: output path of map file
+```
+
 ## Random Simulation _ Pipeline
 **[back to top](#contents)** 
 
@@ -284,6 +305,20 @@ outgen: output path
 # Phenotype Simulation  
 **[back to top](#contents)**  
 ## Phenotype _ GUI
+
+```
+Ped file path:
+QTN area: the genomic area that used to select QTNs
+Range: if 'QTN area' is 'Yes', 'range' can be used to set the 'QTN area'
+Distribution of QTN effects: distribution of QTN effects
+Mean: mean value of the normal distribution, length of 'Mean' should be the same with 'Variance'
+Variance: variance of the normal distribution
+Formats: phenotype formats of 'GEMMA', 'Plink', and 'FaST-LMM' softwares
+Number of simulated phenotypes: number of simulated phenotypes
+Number of QTNs: number of QTNs, if it is a vector, effect of different QTN group will follow different distribution; length of nqtn, m, and v should be same
+Heritability: heritability
+Output file path: output file path
+```
 
 ### Normal distribution
 <p align="center">
