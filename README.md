@@ -157,6 +157,15 @@ $ chmod 777 gemma oldplink plink
 <img src="results/Single Population.png" height="400px" width="460px">
 </a>
 </p>
+```
+Ped: ped file
+Map: map file
+Path for output Ped/Map: path for output ped and map file
+Block: Yes or No, if "Yes", the whole genome will be divided into blocks and exchange to generate new samples
+Number of SNPs in each block:
+Imputation: if TRUE, major allele will be used to impute missing values
+Population size: simulated sample size
+```
 
 ## Single Population _ Pipeline
 **[back to top](#contents)** 
@@ -173,7 +182,15 @@ java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\ou
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --impute
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100
 ```
-
+```
+jar: executive software
+ped: ped file
+map: map file
+outgen: output path
+block: number of SNPs in each block
+rn: simulated sample size
+impute: if 'impute' is added, major allele will be used to impute missing values
+```
 
 ## Multiple Populations _ GUI
 **[back to top](#contents)** 
@@ -204,6 +221,17 @@ java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.po
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --impute --rn 100,200,300,400
 ```
 
+```
+jar: executive software
+ped: ped file
+map: map file
+pop: pop file
+outgen: output path
+block: number of SNPs in each block
+rn: simulated sample size
+impute: if 'impute' is added, major allele will be used to impute missing values
+```
+
 ## Random Simulation _ GUI
 **[back to top](#contents)** 
 
@@ -224,6 +252,15 @@ java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --o
 ### Linux/Mac
 ```
 java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen /root/data/output
+```
+
+```
+jar: executive software
+sample: simulated sample size
+chr: Number of Chromosomes
+marker: SNP markers for each Chromosome
+d: phsical distance (base pairs) between nearby markers
+outgen: output path
 ```
 
 # Phenotype Simulation  
@@ -256,6 +293,16 @@ java -jar kG2P.jar --ped /root/data/AG.ped --outgen /root/data/output --rep 100 
 java -jar kG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --dis geo 0.99 --h2 0.5 --nqtn 100
 java -jar .\kG2P.jar --ped D:\data\AG.ped --outgen D:\data\output --rep 10 --dis geo 0.99,0.88 --h2 0.5 --nqtn 10,20 --QTNarea 1-500,1000-1500
 java -jar KG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --dis nor --m 0,0.1 --v 0.99,0.98 --h2 0.5 --nqtn 10,20 --QTNarea 1-500,1000-1500
+```
+
+```
+rep: number of simulated phenotypes
+dis: distribution of QTN effects
+m: mean value of the normal distribution
+v: variance of the normal distribution
+QTNarea: the genomic area that used to select QTNs
+h2: heritability
+nqtn: number of QTNs, if it is a vector, effect of different QTN group will follow different distribution; length of nqtn, m, and v should be same
 ```
 
 # Population Structure 
