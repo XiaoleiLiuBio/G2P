@@ -475,3 +475,16 @@ gwas: the first gwas result file, there is a one-to-one mapping between gwas res
 pv: column number of P values
 out: output file path
 ```
+
+# Citations
+
+```
+For G2P: Hope it will be coming soon
+For principle components analysis: 
+    if you use plink, please cite: Purcell S, et.al. "PLINK: A Tool Set for Whole-Genome Association and Population-Based Linkage  Analyses." American Journal of Human Genetics, 81.3(2007):559-575.
+For calculating kinship matrix:
+    if you use gemma, please cite: Zhou, X., et.al. "Genome-wide Efficient Mixed Model Analysis for Association Studies." Nature Genetics, 44.7(2012):821.
+Please cite all soft wares you used for GWAS and evaluation!
+```
+
+# FAQ and Hints
