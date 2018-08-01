@@ -182,6 +182,7 @@ java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\ou
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --impute
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100
 ```
+
 ```
 jar: executive software
 ped: ped file
