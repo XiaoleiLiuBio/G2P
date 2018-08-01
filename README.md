@@ -310,7 +310,7 @@ outgen: output path
 Ped file path:
 QTN area: the genomic area that used to select QTNs
 Range: if 'QTN area' is 'Yes', 'range' can be used to set the 'QTN area'
-Distribution of QTN effects: distribution of QTN effects
+Distribution of QTN effects: two options, 'Normal' and 'Geometry'
 Mean: mean value of the normal distribution, length of 'Mean' should be the same with 'Variance'
 Variance: variance of the normal distribution
 Formats: phenotype formats of 'GEMMA', 'Plink', and 'FaST-LMM' softwares
@@ -351,7 +351,7 @@ java -jar KG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --di
 ```
 jar: executive software
 rep: number of simulated phenotypes
-dis: distribution of QTN effects
+dis: distribution of QTN effects, two options, 'nor' and 'geo'
 m: mean value of the normal distribution
 v: variance of the normal distribution
 QTNarea: the genomic area that used to select QTNs
@@ -368,6 +368,13 @@ nqtn: number of QTNs, if it is a vector, effect of different QTN group will foll
 <img src="results/Population Structure.png" height="400px" width="460px">
 </a>
 </p>
+
+```
+Genotype (bed/bim/fam, ped/map): select genotype file
+PCA: select if you want to calculate principle components
+Number of PCs: number of PCs will be calculated and generated
+Kinship: select if you want to calculate Kinship matrix
+```
 
 ## Population structure _ Pipeline
 ### PC _ Windows
