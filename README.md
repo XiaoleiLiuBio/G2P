@@ -131,6 +131,10 @@ $ chmod 777 gemma oldplink plink
 ## pop  
 **[back to top](#contents)**  
 *new samples will be generated using samples within sub-population*
+|Chromosome ID|Marker ID|Genetic Distance|Physical Distance|
+| :---: | :---: |:---: |:---: |
+|1|	PZB00859.1|	0|	157104|
+
 |Sample ID|sub-Population ID|
 | :---: | :---: |
 |33-16|	1|	
