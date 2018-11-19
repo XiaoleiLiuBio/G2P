@@ -131,9 +131,6 @@ $ chmod 777 gemma oldplink plink
 ## pop  
 **[back to top](#contents)**  
 *new samples will be generated using samples within sub-population*
-|Chromosome ID|Marker ID|Genetic Distance|Physical Distance|
-| :---: | :---: |:---: |:---: |
-|1|	PZB00859.1|	0|	157104|
 
 |Sample ID|sub-Population ID|
 | :---: | :---: |
@@ -154,6 +151,7 @@ $ chmod 777 gemma oldplink plink
 ## qtn
 **[back to top](#contents)**  
 *each column represents simulated QTNs for each phenotype*
+
 |Phenotype 1|Phenotype 2|Phenotype 3|Phenotype 4|Phenotype 5|
 | :---: | :---: | :---: | :---: | :---: |
 |66	|67	|80	|83	|90|
