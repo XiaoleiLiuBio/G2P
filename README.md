@@ -40,6 +40,9 @@
 - [Population Structure](#population-_-structure)
     - [Population structure _ GUI](#population-structure-_-gui)
     - [Population structure _ Pipeline](#population-structure-_-pipeline)
+- [Quality Control](#quality-_-control)
+    - [Quality control _ GUI](#quality-control-_-gui)
+    - [Quality control _ Pipeline](#quality-control-_-pipeline)
 - [GWAS](#gwas)
     - [GWAS _ GUI](#gwas-_-gui)
     - [GWAS _ Pipeline](#gwas-_-pipeline)
@@ -180,8 +183,9 @@ $ chmod 777 gemma oldplink plink
 Ped: ped file
 Map: map file
 Path for output Ped/Map: path for output ped and map file
-Block: Yes or No, if "Yes", the whole genome will be divided into blocks and exchange to generate new samples
+Block: Yes or No, if "Yes", the whole genome will be divided into blocks and shuffled to generate new samples
 Number of SNPs in each block: Number of SNPs in each block
+Mutation rate: the frequency of new mutations
 Imputation: if TRUE, major allele will be used to impute missing values
 Population size: simulated sample size
 ```
@@ -191,15 +195,18 @@ Population size: simulated sample size
 
 ### Windows
 ```
-java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --block 4 --impute
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --block 4 –impute
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --block 4 --mutation 0.0001 --impute
 ```
 
 ### Linux/Mac
 ```
 java -jar kG2P.jar --ped /root/data/AG.ped --map /root/data/AG.map --outgen /root/data/output --rn 100 --block 4 –impute
+java -jar kG2P.jar --ped /root/data/AG.ped --map /root/data/AG.map --outgen /root/data/output --rn 100 --mutation 0.0001
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --block 4
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --impute
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --outgen D:\data\output --rn 100 --mutation 0.0001
 ```
 
 ```
@@ -209,7 +216,8 @@ map: map file
 outgen: output path
 block: number of SNPs in each block
 rn: simulated sample size
-impute: if 'impute' is added, major allele will be used to impute missing values
+impute: if 'impute' is added, major allele will be used to impute missing value
+mutation: the frequency of new mutations
 ```
 
 ## Multi Populations _ GUI
@@ -226,10 +234,13 @@ Ped: ped file
 Map: map file
 Pop: pop file
 Path for output Ped/Map: path for output ped and map file
-Block: Yes or No, if "Yes", the whole genome will be divided into blocks and exchange to generate new samples
+Block: Yes, or No, if "Yes", the whole genome will be divided into blocks and shuffled to generate new samples
 Number of SNPs in each block: Number of SNPs in each block
+Mutation rate: the frequency of new mutations
+Migration rate: the ratio of immigrants (or emigrants) for each group
+Genetic drift: is the change in the frequency of an existing gene variant (allele) in a population due to random sampling of organisms
 Imputation: if TRUE, major allele will be used to impute missing values
-Sample size of each population: sample size of each new generated population 
+Sample size of each population: sample size of each newly simulated population 
 Population size: number or vector, simulated sample size
 ```
 
@@ -239,11 +250,14 @@ Population size: number or vector, simulated sample size
 ### Windows
 ```
 java -jar kG2P.jar --ped D:\data\AG.ped –map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --block 4 --rn 100
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --block 4 --rn 100 --mutation 0.0001 --mig 0.1 --genetic 0.001
 ```
 
 ### Linux/Mac
 ```
 java -jar kG2P.jar --ped /root/data/AG.ped --map /root/data/AG.map --pop /root/data/AG.pop --outgen /root/data/output --impute --block 4 --rn 100
+java -jar kG2P.jar --ped /root/data/AG.ped --map /root/data/AG.map --pop /root/data/AG.pop --outgen /root/data/output --rn 100 --mutation 0.0001 --mig 0.1 --genetic 0.001
+java -jar kG2P.jar --ped /root/data/AG.ped --map /root/data/AG.map --pop /root/data/AG.pop --outgen /root/data/output --rn 100 --genetic 0.001
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --block 4 --rn 100
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --rn 100
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --impute --rn 100
@@ -251,6 +265,8 @@ java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.po
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --block 4 --rn 100,200,300,400
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --rn 100,200,300,400
 java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --impute --rn 100,200,300,400
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\AG.map --pop D:\data\AG.pop --outgen D:\data\output --rn 100 --mutation 0.0001 --mig 0.1 --genetic 0.001
+java -jar kG2P.jar --ped D:\data\AG.ped --map D:\data\mydata.map --pop D:\data\mydata.pop --outgen D:\data\output –-rn 100 --genetic 0.003
 ```
 
 ```
@@ -261,6 +277,9 @@ pop: pop file
 outgen: output path
 block: number of SNPs in each block
 rn: simulated sample size
+mutation: the frequency of new mutations
+mig: the ratio of immigrants (or emigrants) for each group
+genetic: genetic drift, which is the change in the frequency of an existing gene variant (allele) in a population due to random sampling of organisms
 impute: if 'impute' is added, major allele will be used to impute missing values
 ```
 
@@ -274,12 +293,13 @@ impute: if 'impute' is added, major allele will be used to impute missing values
 </p>
 
 ```
-Number of Chromosomes: total number of Chromosomes for each new generated sample
-Marker size of each Chromosome: vector, marker size of each Chromosome
+Number of Chromosomes: total number of Chromosomes for each newly simulated sample
+Marker size of each Chromosome: a vector, marker size of each Chromosome
+Heterozygosity: average heterozygosity of all markers
 Population size: Sample size of new generated population
-Physical distance of neighbor markers: Physical distance of neighbor markers
+Fst: fixation index
+Physical distance of neighbor markers: Physical distance between neighbor markers
 Output ped file path: output path of ped file
-Output map file path: output path of map file
 ```
 
 ## Random Simulation _ Pipeline
@@ -288,11 +308,13 @@ Output map file path: output path of map file
 ### Windows
 ```
 java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen D:\data\output
+java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen D:\\data\\output --Heter 0.5 --Fst 0.05,0.15,0.2
 ```
 
 ### Linux/Mac
 ```
 java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen /root/data/output
+java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen /root/data/output --Heter 0.5 --Fst 0.05,0.15,0.2
 ```
 
 ```
@@ -300,8 +322,10 @@ jar: executive software
 sample: simulated sample size
 chr: Number of Chromosomes
 marker: SNP markers for each Chromosome
-d: phsical distance (base pairs) between nearby markers
+d: physical distance (base pairs) between nearby markers
 outgen: output path
+Heter: average heterozygosity of all markers
+Fst: fixation index
 ```
 
 # Phenotype Simulation  
@@ -323,16 +347,19 @@ outgen: output path
 </p>
 
 ```
-Ped file path:
+Ped file path: path of ped file
 QTN area: the genomic area that used to select QTNs
 Range: if 'QTN area' is 'Yes', 'range' can be used to set the 'QTN area'
+Effect type: three options for QTN effect type, including A, A+D, A+D+A/D, A represents Additive effect and D represents Dominance effect
 Distribution of QTN effects: two options, 'Normal' and 'Geometry'
 Mean: mean value of the normal distribution, length of 'Mean' should be the same with 'Variance'
 Variance: variance of the normal distribution
-Formats: phenotype formats of 'GEMMA', 'Plink', and 'FaST-LMM' softwares
+Formats: phenotype formats of 'GEMMA', 'Plink', and 'FaST-LMM' soft wares
+Trait type: quantitative or category
+Summary statistics: output the summary statistics information of simulated phenotypes, includes QTN ID, Chromosome, Physical Position, effects of additive, dominance, and additive-dominance interaction, and heritability 
 Number of simulated phenotypes: number of simulated phenotypes
-Number of QTNs: number of QTNs, if it is a vector, effect of different QTN group will follow different distribution; length of nqtn, m, and v should be same
-Heritability: heritability
+Number of QTNs: number of QTNs, if it is a vector, effect of different QTN group will follow different distributions; length of nqtn, m, and v should be same
+Heritability: heritability, a vector with length equals to number of ‘Effect type’
 Output file path: output file path
 ```
 
@@ -340,6 +367,7 @@ Output file path: output file path
 ### Windows
 ```
 java -jar kG2P.jar --ped D:\data\AG.ped --outgen D:\data\output --rep 100 --dis geo 0.99 --h2 0.5 --nqtn 100 --QTNarea 1-500,1000-1500
+java -jar kG2P.jar --ped D:\data\AG.ped --outgen D:\data\output --rep 10 --dis geo 0.99,0.88,0.77 --h2 0.3,0.1,0.05 --nqtn 80,40,20 --QTNarea 1-500,1000-1500 --effect A/D --category 2 --summary
 ```
 
 ### Linux/Mac
@@ -348,6 +376,10 @@ java -jar kG2P.jar --ped /root/data/AG.ped --outgen /root/data/output --rep 100 
 java -jar kG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --dis geo 0.99 --h2 0.5 --nqtn 100
 java -jar .\kG2P.jar --ped D:\data\AG.ped --outgen D:\data\output --rep 10 --dis geo 0.99,0.88 --h2 0.5 --nqtn 10,20 --QTNarea 1-500,1000-1500
 java -jar KG2P.jar --ped D:\data\AG.ped --outgen D:\data\Part2out --rep 100 --dis nor --m 0,0.1 --v 0.99,0.98 --h2 0.5 --nqtn 10,20 --QTNarea 1-500,1000-1500
+java -jar kG2P.jar --ped /root/data/AG.ped --outgen /root/data/output --rep 10 --dis geo 0.99,0.88 --h2 0.3,0.1 --nqtn 80,40 --effect D --category 4
+java -jar kG2P.jar --ped /root/data/AG.ped --outgen /root/data/output --rep 10 --dis nor --h2 0.5 --m 0 --v 0.99 --nqtn 100 --effect A --category 2
+java -jar kG2P.jar --ped /root/data/AG.ped --outgen /root/data/output --rep 10 --dis nor --h2 0.3 --m 0.2 --v 0.88 --nqtn 100 –summary
+java -jar kG2P.jar --ped /root/data/AG.ped --outgen /root/data/output --rep 10 --dis nor --h2 0.5 --m 0 --v 0.99 --nqtn 100 --effect A/D --category 2
 ```
 
 ```
@@ -358,7 +390,9 @@ m: mean value of the normal distribution
 v: variance of the normal distribution
 QTNarea: the genomic area that used to select QTNs
 h2: heritability
-nqtn: number of QTNs, if it is a vector, effect of different QTN group will follow different distribution; length of nqtn, m, and v should be same
+nqtn: number of QTNs, if it is a vector, the effects of different QTN groups will follow different distributions, and the length of nqtn, m, and v should be same
+effect: three options for QTN effect type, including A (A), A+D (D), A+D+A/D (A/D)
+category: number of categories for simulated phenotypes
 ```
 
 # Population Structure 
@@ -398,6 +432,58 @@ jar: executive software
 pre: pipeline of the software you want to use, attention that the software should be put in the same path as kG2P.jar
 ```
 
+# Quality Control 
+**[back to top](#contents)**  
+## Quality control _ GUI
+
+<p align="center">
+<a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Quality Control.png">
+<img src="results/Population Structure.png" height="400px" width="460px">
+</a>
+</p>
+
+```
+Merge: merge multiple selected genotype file
+Ped file path: path of ped file
+Marker call rate: filters out all markers with missing call rates exceeding the provided value
+Individual call rate: filters out all individuals with missing call rates exceeding the provided value
+MAF: threshold of minor allele frequency
+HWE: Hardy-Weinberg equilibrium test p-value threshold
+Output file format: the format of output genotype file
+```
+
+## Quality control _ Pipeline
+### Merge _ Windows
+```
+java -jar kG2P.jar --mergePED D:\data\mydata1.ped D:\data\mydata2.ped
+```
+### Merge _ Linux/Mac
+```
+java -jar kG2P.jar --mergePED /root/data/mydata1.ped /root/data/mydat2.ped
+```
+
+### QC _ Windows
+```
+java -jar .\kG2P.jar --ped "D:\data\mydata.ped" --geno 0.1 --mind 0.1 --maf 0.05 --hwe 0 --format pbv
+java -jar .\kG2P.jar --ped "D:\data\mydata.ped" --geno 0.1 --mind 0.1 --maf 0.05 --hwe 0 --format b
+```
+
+### QC _ Linux/Mac
+```
+java -jar ./kG2P.jar --ped /root/data/mydata.ped --geno 0.1 --mind 0.1 --maf 0.05 --hwe 0 --format pbv
+java -jar kG2P.jar --ped /root/data/mydata.ped --geno 0.1 --mind 0.1 --maf 0.08 --hwe 0 --format bv
+```
+
+```
+jar: executive software
+mergePED: merge multiple genotype files prepared in ped format
+geno: filters out all markers with missing call rates exceeding the provided value
+mind: filters out all individuals with missing call rates exceeding the provided value
+maf: threshold of minor allele frequency
+hwe: Hardy-Weinberg equilibrium test p-value threshold
+format: three options, including p(ped/map), b(bed/bim/fam), and v(vcf)
+```
+
 # GWAS  
 **[back to top](#contents)**  
 ## GWAS _ GUI
@@ -412,21 +498,31 @@ pre: pipeline of the software you want to use, attention that the software shoul
 Genotype (bed/bim/fam, ped/map): select genotype file
 Phenotype file path: select the first phenotype file, all phenotypes in the same path will be analyzed one by one; name of the phenotype file must include a continuous order number, e.g., 'phenotype1.txt', 'phenotype2.txt', 'phenotype3.txt'
 Results output file path: select output file path
-Command: command for running gwas of the first phenotype, user-specific covariates files and kinship file can also included in the command line
+Command: command for running gwas of the first phenotype, user-specific covariates files and kinship file can be also included in the command line, note that the output file name must be ‘g2ptemp’
+```
+
+```
+R package _ Windows
+Take FarmCPU (an R package) as an example:
+Download and install essential packages for FarmCPU from http://www.zzlab.net/FarmCPU/index.html;
+If the script for running FarmCPU is stored in Demo_script.R and the path of Rscript.exe is "E:\R\R-3.4.0\bin\x64\Rscript.exe", the command line should be written as: E:\R\R-3.4.0\bin\x64\Rscript.exe Demo_script.R
 ```
 
 ## GWAS _ Pipeline
 ### Plink _ Windows
 ```
-java -jar kG2P.jar  --GWAS "plink --bfile D:\data\AG --fam D:\data\out\171104010413\Plink\Plink_snps1.fam --assoc --out D:\data\g2ptemp" --sp Plink_snps1.fam
+java -jar kG2P.jar --GWAS "plink --bfile D:\data\AG --fam D:\data\out\171104010413\Plink\Plink_snps1.fam --assoc --out D:\data\g2ptemp" --sp Plink_snps1.fam
 ```
 ### Plink _ Linux/Mac
 ```
-java -jar kG2P.jar  --GWAS "./plink --bfile /root/data/AG --fam /root/data/output/171104010413/Plink/Plink_snps1.fam --assoc --out /root/data/g2ptemp" --sp Plink_snps1.fam
+java -jar kG2P.jar --GWAS "./plink --bfile /root/data/AG --fam /root/data/output/171104010413/Plink/Plink_snps1.fam --assoc --out /root/data/g2ptemp" --sp Plink_snps1.fam
 ```
 ### Gemma _ Linux/Mac
 ```
-java -jar kG2P.jar  --GWAS "./gemma -bfile /root/data/AG -p /root/data/out/171104030401/GEMMA/GEMMA_phenotype1.txt -k /root/output/testgemma.cXX.txt -lmm 4 -o g2ptemp" --sp GEMMA_phenotype1.txt
+java -jar kG2P.jar --GWAS "./gemma -bfile /root/data/AG -p /root/data/out/171104030401/GEMMA/GEMMA_phenotype1.txt -k /root/output/testgemma.cXX.txt -lmm 4 -o g2ptemp" --sp GEMMA_phenotype1.txt
+jar: executive software
+GWAS: command line used for running gwas of the first phenotype
+sp: the first phenotype file, the file path is not needed
 ```
 
 ```
@@ -450,21 +546,24 @@ Map file: map file
 QTN file: qtn file
 GWAS result files path: path of gwas results
 Column number of P values: column number of P values
+Window size: A window is considered to be identified if a positive genetic marker is detected within the window
 Output file path: output path of power/fdr evaluation results
 ```
 
 ## Method Evaluation _ Pipeline
-### Plink _ Windows
+### Evaluation of the methods in Plink _ Windows
 ```
 java -jar kG2P.jar --map D:\data\AG.map --qtn D:\data\output\170106093742\qtn\test.qtn --gwas D:\data\output\Plink_snps1.qassoc --pv 9 --out D:\data\output
+java -jar kG2P.jar --map D:\data\AG.map --qtn D:\oldoutput\190120151328\qtn\test.qtn --gwas D:\oldoutput\Plink_snps1.qassoc --pv 9 --out D:\data\output --WS 2,2000,200000,200000000
 ```
 
-### Plink _ Linux/Mac
+### Evaluation of the methods in Plink _ Linux/Mac
 ```
 java -jar kG2P.jar --map /root/data/AG.map --qtn /root/data/output/171104030401/qtn/test.qtn --gwas /root/data/output/Plink_snps1.qassoc --pv 9 --out /root/data/output
+java -jar kG2P.jar --map /root/data/AG.map --qtn /root/data/output/171104030401/qtn/test.qtn --gwas /root/data/output/Plink_snps1.qassoc --pv 9 --out /root/data/output --WS 3,300,3000,30000,300000,3000000
 ```
 
-### Gemma _ Linux/Mac
+### Evaluation of the methods in Gemma _ Linux/Mac
 ```
 java -jar kG2P.jar --map /root/data/AG.map --qtn /root/data/output/171104030401/qtn/test.qtn --gwas /root/output/GEMMA_phenotype1.assoc.txt --pv 9 --out /root/data/output
 ```
@@ -473,9 +572,10 @@ java -jar kG2P.jar --map /root/data/AG.map --qtn /root/data/output/171104030401/
 jar: executive software
 map: map file
 qtn: qtn file
-gwas: the first gwas result file, there is a one-to-one mapping between gwas result files and columns in qtn file
+gwas: the first gwas result file, there is a one-to-one mapping between gwas result files and columns in the qtn file
 pv: column number of P values
 out: output file path
+WS: Window size, a window is considered to be identified if a positive genetic marker is detected within the window
 ```
 
 # Citations
