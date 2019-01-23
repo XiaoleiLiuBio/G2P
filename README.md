@@ -438,7 +438,7 @@ pre: pipeline of the software you want to use, attention that the software shoul
 
 <p align="center">
 <a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/Quality Control.png">
-<img src="results/Population Structure.png" height="400px" width="460px">
+<img src="results/Quality Control.png" height="400px" width="460px">
 </a>
 </p>
 
