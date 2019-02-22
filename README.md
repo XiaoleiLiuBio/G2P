@@ -581,11 +581,11 @@ WS: Window size, a window is considered to be identified if a positive genetic m
 # Citations
 
 ```
-For G2P: Hope it will be coming soon
+For G2P: Please cite: You Tang, Xiaolei Liu; G2P: A Genome-Wide-Association-Study Simulation Tool for Genotype Simulation, Phenotype Simulation, and Power Evaluation, Bioinformatics, btz126, https://doi.org/10.1093/bioinformatics/btz126
 For principle components analysis: 
-    if you use plink, please cite: Purcell S, et.al. "PLINK: A Tool Set for Whole-Genome Association and Population-Based Linkage  Analyses." American Journal of Human Genetics, 81.3(2007):559-575.
+    if you use plink, please also cite: Purcell S, et.al. "PLINK: A Tool Set for Whole-Genome Association and Population-Based Linkage  Analyses." American Journal of Human Genetics, 81.3(2007):559-575.
 For calculating kinship matrix:
-    if you use gemma, please cite: Zhou, X., et.al. "Genome-wide Efficient Mixed Model Analysis for Association Studies." Nature Genetics, 44.7(2012):821.
+    if you use gemma, please also cite: Zhou, X., et.al. "Genome-wide Efficient Mixed Model Analysis for Association Studies." Nature Genetics, 44.7(2012):821.
 Please cite all soft wares you used for GWAS and evaluation!
 ```
 
