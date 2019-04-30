@@ -308,13 +308,13 @@ Output ped file path: output path of ped file
 ### Windows
 ```
 java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen D:\data\output
-java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen D:\\data\\output --Heter 0.5 --Fst 0.05,0.15,0.2
+java -jar kG2P.jar --sample 100,200,300 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen D:\data\output --heter 0.5 --Fst 0.05,0.15,0.2
 ```
 
 ### Linux/Mac
 ```
 java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen /root/data/output
-java -jar kG2P.jar --sample 100 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen /root/data/output --Heter 0.5 --Fst 0.05,0.15,0.2
+java -jar kG2P.jar --sample 100,200,300 --chr 5 --marker 100,200,300,400,500 --d 500 --outgen /root/data/output --heter 0.5 --Fst 0.05,0.15,0.2
 ```
 
 ```
@@ -324,7 +324,7 @@ chr: Number of Chromosomes
 marker: SNP markers for each Chromosome
 d: physical distance (base pairs) between nearby markers
 outgen: output path
-Heter: average heterozygosity of all markers
+heter: average heterozygosity of all markers
 Fst: fixation index
 ```
 
