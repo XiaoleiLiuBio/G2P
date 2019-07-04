@@ -358,7 +358,7 @@ Formats: phenotype formats of 'GEMMA', 'Plink', and 'FaST-LMM' soft wares
 Trait type: quantitative or category
 Summary statistics: output the summary statistics information of simulated phenotypes, includes QTN ID, Chromosome, Physical Position, effects of additive, dominance, and additive-dominance interaction, and heritability 
 Number of simulated phenotypes: number of simulated phenotypes
-Number of QTNs: number of QTNs, if it is a vector, effect of different QTN group will follow different distributions; length of nqtn, m, and v should be same
+Number of QTNs: number of QTNs, if it is a vector, effect of different QTN group will follow different distributions; The length of 'Number of QTNs', 'Mean', and 'Variance' should be same
 Heritability: heritability, a vector with length equals to number of ‘Effect type’
 Output file path: output file path
 ```
