@@ -2,7 +2,7 @@
 
 ## A Genome-Wide-Association-Study Simulation Tool for [G](https://github.com/XiaoleiLiuBio/G2P)enotype Simulation, [P](https://github.com/XiaoleiLiuBio/G2P)henotype Simulation, and [P](https://github.com/XiaoleiLiuBio/G2P)ower Evaluation
 
-More abundunt simulation functions could be refered to our newly developed package [SIMER] for data simulation of life science and breeding (https://github.com/xiaolei-lab/SIMER)
+More abundant simulation functions could be referred to our newly developed package [SIMER] for data simulation of life science and breeding (https://github.com/xiaolei-lab/SIMER)
 
 <p align="center">
 <a href="https://raw.githubusercontent.com/XiaoleiLiuBio/G2P/master/results/G2P_logo.png">
