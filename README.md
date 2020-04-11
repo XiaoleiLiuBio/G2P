@@ -8,7 +8,7 @@
 </a>
 </p>
 
-More abundant simulation functions could be referred to our newly developed package [SIMER](https://github.com/xiaolei-lab/SIMER) for data simulation of life science and breeding
+More abundant simulation functions could be referred to our newly developed package [SIMER](https://github.com/xiaolei-lab/SIMER) for simulation of life science and breeding
 
 ### Authors:
 
